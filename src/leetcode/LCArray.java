@@ -1,5 +1,9 @@
 package leetcode;
 
+import java.util.LinkedList;
+import java.util.Objects;
+import java.util.Queue;
+
 public class LCArray {
 
     /*
@@ -31,6 +35,31 @@ public class LCArray {
     }
 
 
+    /*
+    link: https://leetcode.com/problems/is-subsequence/
+    Level: Easy
+    * */
+
+    /*C1: Normal */
+    public static boolean isSubsequence(String s, String t) {
+        if (s.isEmpty()) return true;
+        if (s.length() > t.length()) return false;
+        Queue<Character> queue = new LinkedList<>();
+        for (int i = 0; i < s.length(); i++) queue.add(s.charAt(i));
+        Character character = queue.poll();
+        for (int i = 0; i < t.length(); i++) {
+            if (character.equals(t.charAt(i))) {
+                character = queue.poll();
+                if (Objects.isNull(character)) return true;
+            }
+        }
+        return Objects.isNull(character);
+    }
+
+    /*C2: recursion*/
+
+
+    /*C3:Dynamic Program*/
 
 
 }
