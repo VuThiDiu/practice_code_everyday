@@ -57,7 +57,9 @@ public class LCArray {
     }
 
     /*C2: recursion*/
-
+    public static void main(String[] args) {
+        System.out.println("fhsiksfsffs");
+    }
 
     /*C3:Dynamic Program*/
 
