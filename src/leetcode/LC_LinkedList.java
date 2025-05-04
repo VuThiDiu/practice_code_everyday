@@ -59,7 +59,7 @@ public class LC_LinkedList {
     /*post , in , pre */
 
     /*Easy: https://leetcode.com/problems/remove-linked-list-elements/description/?envType=problem-list-v2&envId=recursion*/
-    public ListNode removeElements(ListNode head, int val) {x
+    public ListNode removeElements(ListNode head, int val) {
         if(head == null) return head;
         head.next = removeElements(head.next, val);
         return head.val == val ? head.next : head;
