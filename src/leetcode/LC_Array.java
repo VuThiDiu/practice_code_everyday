@@ -4,11 +4,10 @@ import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Queue;
 
-public class LCArray {
+public class LC_Array {
 
     /*
-    link: https://leetcode.com/problems/concatenation-of-array/
-    Level: Easy
+    Easy: https://leetcode.com/problems/concatenation-of-array/
     * */
     public int[] getConcatenation(int[] nums) {
         int length = nums.length;
@@ -21,9 +20,8 @@ public class LCArray {
     }
 
     /*
-    link: https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
-    Level: Easy 
-    * */
+    Easy: https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
+    */
     public static int[] replaceElements(int[] arr) {
         int maxInRight = -1;
         for (int i = arr.length - 1; i >= 0; i--) {
@@ -36,9 +34,8 @@ public class LCArray {
 
 
     /*
-    link: https://leetcode.com/problems/is-subsequence/
-    Level: Easy
-    * */
+    Easy: https://leetcode.com/problems/is-subsequence/
+    */
 
     /*C1: Normal */
     public static boolean isSubsequence(String s, String t) {
@@ -55,13 +52,4 @@ public class LCArray {
         }
         return Objects.isNull(character);
     }
-
-    /*C2: recursion*/
-    public static void main(String[] args) {
-        System.out.println("fhsiksfsffs");
-    }
-
-    /*C3:Dynamic Program*/
-
-
 }
